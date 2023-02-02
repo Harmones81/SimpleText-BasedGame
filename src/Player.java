@@ -1,18 +1,15 @@
 public class Player
 {
-    private int currentRoom;
 
-    public Player()
-    {
-        // For an empty player
-    }
 
-    public Player(int currentRoom)
+    private Room currentRoom;
+
+    public Player(Room currentRoom)
     {
         this.currentRoom = currentRoom;
     }
 
-    public void SetCurrentRoom(int roomID){ this.currentRoom = roomID; }
+    public void SetCurrentRoom(Room room){ this.currentRoom = room; }
 
-    public int GetCurrentRoom(){ return this.currentRoom; }
+    public Room GetCurrentRoom(){ return this.currentRoom; }
 }

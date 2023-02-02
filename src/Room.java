@@ -9,11 +9,6 @@ public class Room
     private boolean hasVisited;
     private List<Exit> exits;
 
-    public Room()
-    {
-        // For an empty room
-    }
-
     public Room(int roomID, String name, List<String> description)
     {
         this.roomID = roomID;
@@ -25,11 +20,7 @@ public class Room
 
     public void AddExit(Exit exit){ exits.add(exit); }
 
-    public void SetRoomID(int roomID){ this.roomID = roomID; }
-    public void SetName(String name){ this.name = name; }
-    public void SetDescription(List<String> description){ this.description = description; }
     public void SetVisitation(boolean hasVisited){ this.hasVisited = hasVisited; }
-    public void SetExits(List<Exit> exits){ this.exits = exits; }
 
     public int GetRoomID(){ return roomID; }
     public String GetName(){ return name; }
